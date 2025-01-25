@@ -18,7 +18,7 @@
             margin: 0;
         }
         #map-title {
-          text-align: center;
+            text-align: center;
             position: absolute;
             top: 10px; /* Adjust the vertical position */
             left: 50%; /* Center horizontally */
@@ -75,7 +75,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[41.39103624989884,-81.25148298023359],[41.50403394764003,-81.03612187571731]]);
+        }).setView([41.1931, -81.3103], 14);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
